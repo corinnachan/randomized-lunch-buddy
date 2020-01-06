@@ -1,6 +1,8 @@
+var generatorButton = document.querySelector(".generator-btn");
 var results = document.querySelector("#name");
 var obj = require('../classname.json');
 
+generatorButton.addEventListener("click", getDestination);
 
 function getName() {
    randomNum = Math.floor(Math.random() * Math.floor(332));
